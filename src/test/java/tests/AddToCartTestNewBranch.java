@@ -10,7 +10,7 @@ import pageobjects.ProductsPage;
 import pageobjects.YourCartPage;
 import pageobjects.YourInfoPage;
 
-public class AddToCartTestNewTry extends BaseTest{
+public class AddToCartTestNewBranch extends BaseTest{
 	
 	@Test
 	public void addToCartCancel() throws InterruptedException {

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import pageobjects.DataProviderPage;
 import pageobjects.LoginPage;
 
-public class LoginTestNewTry extends BaseTest{
+public class LoginTestNewBranch extends BaseTest{
 	
 	@Test
 	public void lg1_loginFailed() throws InterruptedException {
