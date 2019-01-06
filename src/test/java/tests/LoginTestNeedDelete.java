@@ -1,6 +1,5 @@
 package tests;
 
-import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -9,12 +8,11 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Link;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Story;
 import pageobjects.DataProviderPage;
 import pageobjects.LoginPage;
 
 @Epic("Login")
-public class LoginTest2 extends BaseTest{
+public class LoginTestNeedDelete extends BaseTest{
 
 	@Link("http://www.bmc.com/")
 	@Severity(SeverityLevel.BLOCKER)
@@ -25,7 +23,6 @@ public class LoginTest2 extends BaseTest{
 		//Assert.fail();
 	}
 
-	@Link("http://www.bmc.com/")
 	@Severity(SeverityLevel.BLOCKER)
 	@Test
 	public void lg11_loginFailed() throws InterruptedException {
@@ -50,7 +47,6 @@ public class LoginTest2 extends BaseTest{
 		loginPage.login(username, password);
 	}
 
-	@Link("http://www.bmc.com/")
 	@Severity(SeverityLevel.MINOR)
 	//Parameters
 	@Test @Parameters({"user1", "pass1"})
@@ -65,13 +61,6 @@ public class LoginTest2 extends BaseTest{
 	public void lg15_loginDataProviderFaker_Failed(String username, String password) throws InterruptedException {
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.login(username, password);
-	}
-	
-	@Severity(SeverityLevel.CRITICAL)
-	@Story("As a User I ant to fail this test")
-	@Test(priority = 0, description = "Add To Cart And Confirm")
-	public void failTest() {
-		Assert.fail("Fail this test to see fail result");
 	}
 
 	///////////////////////////////// END Home Work 1 ///////////////////////////////////
