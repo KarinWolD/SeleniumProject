@@ -8,9 +8,7 @@ public class DataProviderPage {
 
 		@DataProvider
 		public Object[][] loginFailData(){
-			return new Object[][]{{"user1","password1"},{"user2","password2"},
-				{"user11","password11"},{"user22","password22"},
-				{"user33","password33"},{"user44","password44"}};
+			return new Object[][]{{"user1","password1"},{"user2","password2"}};
 		}//loginData
 		
 		@DataProvider

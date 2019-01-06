@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	<test thread-count="5" name="Test">
+<suite name="All Test">
+<listeners>
+		<listener class-name="utilities.ListenerClass"></listener>
+</listeners>
+	<test thread-count="5" name="Login and Add to Chart">
 		<parameter name="user1" value="standard_user" />
 		<parameter name="pass1" value="111" />
 		<parameter name="user1" value="standard_user222" />
