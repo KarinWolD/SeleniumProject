@@ -8,6 +8,8 @@ import org.testng.annotations.Parameters;
 
 import com.github.javafaker.Faker;
 
+import io.qameta.allure.Step;
+
 public class LoginPage extends BasePage{
 	@FindBy(css="[data-test='username']")
 	@CacheLookup
@@ -23,7 +25,8 @@ public class LoginPage extends BasePage{
 		super(driver);
 	}
 
-	@Parameters(value = "loginFailData")
+	@Step ("login with user {0} and password {1}")
+	@Parameters(value = "loginFailData")	
 	public void login(String user,String password) {
 		fillText(userField, user);
 		fillText(passwordField, password);
