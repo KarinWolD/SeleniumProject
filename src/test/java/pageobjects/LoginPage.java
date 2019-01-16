@@ -33,6 +33,7 @@ public class LoginPage extends BasePage{
 		click(btnLogin);
 	}
 
+	//add here error and commit
 	public void login() {
 	Faker faker = new Faker();
 	String user= faker.name().fullName();
