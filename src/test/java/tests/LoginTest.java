@@ -39,6 +39,7 @@ public class LoginTest extends BaseTest{
 	@Test(priority = 0, description = "Error Login")
 	public void lg12_loginFacker_Failed() throws InterruptedException {
 		LoginPage loginPage = new LoginPage(driver);
+		//add note to recommit
 		loginPage.login();
 	}
 
