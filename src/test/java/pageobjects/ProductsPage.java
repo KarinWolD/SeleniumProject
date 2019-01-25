@@ -38,6 +38,7 @@ public class ProductsPage extends BasePage{
 		}
 	}
 
+	
 	public void addToCart(int index) {
 		WebElement btnAdd = list.get(index).findElement(By.cssSelector(".add-to-cart-button"));
 		click(btnAdd);
@@ -54,3 +55,5 @@ public class ProductsPage extends BasePage{
 		return num;
 	}
 }
+
+/**/

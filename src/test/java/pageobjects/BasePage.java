@@ -12,13 +12,32 @@ public class BasePage {
 		PageFactory.initElements(driver, this);
 	}
 	
+	/** Example!
+	 * This method click on webelement
+	 * @param el the element we want to click
+	 * @author kdvir
+	 * @exception button is clicked
+	 * @since 2018 
+	 * @throws element such session exception
+	 * @return nothing, move to different location
+	 */
 	protected void click(WebElement el) {
-		//highlight
+		// highlight
 		el.click();
 	}
+
+	/** Note by JAVADOC - click
+	 * */
+	/* simple note */
+	// note
 	
-	protected void fillText(WebElement el,String text) {
-		//hightlight
+	/**
+	 * This method fills text in a given webelement
+	 * @param el the element we want to fill
+	 * @param text the text needed to fill 
+	 */
+	protected void fillText(WebElement el, String text) {
+		// hightlight
 		el.clear();
 		el.sendKeys(text);
 	}
